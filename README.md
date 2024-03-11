@@ -1,68 +1,62 @@
-[![CI](https://github.com/marytts/marytts/actions/workflows/main.yml/badge.svg)](https://github.com/marytts/marytts/actions/workflows/main.yml)
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://github.com/marytts/marytts/actions/workflows/main.yml"><img src="https://github.com/marytts/marytts/actions/workflows/main.yml/badge.svg" alt="CI" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">玛丽TTS</font></font></h1><a id="user-content-marytts" class="anchor" aria-label="永久链接：MaryTTS" href="#marytts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是多语言开源 MARY 文本转语音平台 (MaryTTS) 的源代码存储库。</font><font style="vertical-align: inherit;">MaryTTS是一个用纯Java编写的客户端-服务器系统，因此它可以在许多平台上运行。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要获取可供使用的可下载包，请参阅</font></font><a href="https://github.com/marytts/marytts/releases"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发布页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/marytts/marytts-wiki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">较旧的文档也可以在https://github.com/marytts/marytts-wiki</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="http://mary.dfki.de" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://mary.dfki.de</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://mary.opendfki.de" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://mary.opendfki.de</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本自述文件是 MaryTTS 源代码存储库的一部分。</font><font style="vertical-align: inherit;">它包含有关编译和开发 MaryTTS 源的信息。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该代码采用较宽松的通用公共许可证 LGPL 版本 3 - 请参阅 LICENSE.md 了解详细信息。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跑步玛丽TTS</font></font></h2><a id="user-content-running-marytts" class="anchor" aria-label="永久链接：运行 MaryTTS" href="#running-marytts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行</font></font><code>./gradlew run</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">  （或</font></font><code>gradlew.bat run</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Windows 上）启动 MaryTTS 服务器。</font><font style="vertical-align: inherit;">然后使用 Web 浏览器</font><font style="vertical-align: inherit;">访问</font></font><a href="http://localhost:59125" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://localhost:59125 。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想在不同的地址和端口上启动 MaryTTS，您可以使用以下选项：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>./gradlew run -Dsocket.port=5920 -Dsocket.addr=0.0.0.0 --info</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="./gradlew run -Dsocket.port=5920 -Dsocket.addr=0.0.0.0 --info" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其中 5920 是新端口，0.0.0.0 是新地址。</font><font style="vertical-align: inherit;">当地址为0.0.0.0时，所有接口都会被监听。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过使用选项，您可以将</font><em><font style="vertical-align: inherit;">AND</font></em></font><code>--info</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> MaryTTS的记录器设置</font><font style="vertical-align: inherit;">为 INFO 级别。</font><font style="vertical-align: inherit;">通过使用</font><font style="vertical-align: inherit;">，您可以将级别设置为 DEBUG。</font></font><code>gradle</code> <em><font style="vertical-align: inherit;"></font></em><font style="vertical-align: inherit;"></font><code>--debug</code><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">还可以</font><font style="vertical-align: inherit;">通过定义系统变量将 MaryTTS 记录器级别设置为</font></font><code>INFO</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font><font style="vertical-align: inherit;">。</font></font><code>DEBUG</code><font style="vertical-align: inherit;"></font><code>log4j.logger.marytts</code><font style="vertical-align: inherit;"></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载并安装语音</font></font></h2><a id="user-content-downloading-and-installing-voices" class="anchor" aria-label="永久链接：下载和安装语音" href="#downloading-and-installing-voices"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行</font></font><code>./gradlew runInstallerGui</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以启动安装程序 GUI 以下载并安装更多语音。</font><font style="vertical-align: inherit;">在使用新语音之前，需要重新启动正在运行的 MaryTTS 服务器。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建设玛丽TTS</font></font></h2><a id="user-content-building-marytts" class="anchor" aria-label="永久链接：构建 MaryTTS" href="#building-marytts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">跑步</font></font><code>./gradlew build</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">这将编译和测试所有模块，并为每个下创建输出</font></font><code>build/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，以前，MaryTTS v5.x 是使用 Maven 构建的。</font><font style="vertical-align: inherit;">请参考</font></font><a href="https://github.com/marytts/marytts/tree/5.x"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5.x分支</font></font></strong></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包装玛丽TTS</font></font></h2><a id="user-content-packaging-marytts" class="anchor" aria-label="永久链接：包装 MaryTTS" href="#packaging-marytts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运行</font></font><code>./gradlew distZip</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>./gradlew distTar</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 下构建分发包</font></font><code>build/distributions</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><code>build/install</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以通过运行</font><font style="vertical-align: inherit;">直接将解压的发行版“安装”到其中</font></font><code>./gradlew installDist</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该发行版包含运行独立的 MaryTTS 服务器实例或下载和安装更多语音所需的所有文件。</font><font style="vertical-align: inherit;">运行服务器或安装程序 GUI 的脚本可以在发行版的目录中找到</font></font><code>bin/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您自己的 Java 项目中使用 MaryTTS</font></font></h2><a id="user-content-using-marytts-in-your-own-java-projects" class="anchor" aria-label="永久链接：在您自己的 Java 项目中使用 MaryTTS" href="#using-marytts-in-your-own-java-projects"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您自己的 Java 项目中使用 MaryTTS 的最简单方法是声明对相关 MaryTTS 工件的依赖关系，例如默认的美国英语 HSMM 语音：</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">梅文</font></font></h3><a id="user-content-maven" class="anchor" aria-label="永久链接：Maven" href="#maven"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加到您的</font></font><code>pom.xml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="highlight highlight-text-xml notranslate position-relative overflow-auto" dir="auto"><pre>&lt;<span class="pl-ent">repositories</span>&gt;
+  &lt;<span class="pl-ent">repository</span>&gt;
+    &lt;<span class="pl-ent">url</span>&gt;https://mlt.jfrog.io/artifactory/mlt-mvn-releases-local&lt;/<span class="pl-ent">url</span>&gt;
+  &lt;/<span class="pl-ent">repository</span>&gt;
+&lt;/<span class="pl-ent">repositories</span>&gt;
 
-# MaryTTS
-
-This is the source code repository for the multilingual open-source MARY text-to-speech platform (MaryTTS).
-MaryTTS is a client-server system written in pure Java, so it runs on many platforms.
-
-**For a downloadable package ready for use, see [the releases page](https://github.com/marytts/marytts/releases).**
-
-Older documentation can also be found at https://github.com/marytts/marytts-wiki, http://mary.dfki.de and https://mary.opendfki.de.
-
-This README is part of the the MaryTTS source code repository.
-It contains information about compiling and developing the MaryTTS sources.
-
-The code comes under the Lesser General Public License LGPL version 3 -- see LICENSE.md for details.
-
-
-## Running MaryTTS
-
-Run `./gradlew run`  (or `gradlew.bat run` on Windows) to start a MaryTTS server.
-Then access it at http://localhost:59125 using your web browser.
-
-If you want to start a MaryTTS on a different address and port, you can use the following options:
-
-```sh
-./gradlew run -Dsocket.port=5920 -Dsocket.addr=0.0.0.0 --info
-```
-where 5920 is the new port and 0.0.0.0 the new address. In case of the address being 0.0.0.0, all the interfaces will be listened.
-
-By using the option `--info`, you set the logger of `gradle` *AND* MaryTTS at the level INFO. By using `--debug`, you set the level to DEBUG.
-
-It is also possible to set the MaryTTS logger level to `INFO` or `DEBUG` by defining the system variable `log4j.logger.marytts`.
-
-## Downloading and installing voices
-
-Run `./gradlew runInstallerGui` to start an installer GUI to download and install more voices.
-A running MaryTTS server needs to be restarted before the new voices can be used.
-
-
-## Building MaryTTS
-
-Run `./gradlew build`.
-This will compile and test all modules, and create the output for each under `build/`.
-
-Note that previously, MaryTTS v5.x was built with Maven. Please refer to the [**5.x branch**](https://github.com/marytts/marytts/tree/5.x).
-
-
-## Packaging MaryTTS
-
-Run `./gradlew distZip` or `./gradlew distTar` to build a distribution package under `build/distributions`.
-You can also "install" an unpacked distribution directly into `build/install` by running `./gradlew installDist`.
-
-The distribution contains all the files required to run a standalone MaryTTS server instance, or to download and install more voices.
-The scripts to run the server or installer GUI can be found inside the distribution in the `bin/` directory.
-
-
-##  Using MaryTTS in your own Java projects
-
-The easiest way to use MaryTTS in your own Java projects is to declare a dependency on a relevant MaryTTS artifact, such as the default US English HSMM voice:
-
-### Maven
-
-Add to your `pom.xml`:
-```xml
-<repositories>
+&lt;<span class="pl-ent">dependencies</span>&gt;
+  &lt;<span class="pl-ent">dependency</span>&gt;
+    &lt;<span class="pl-ent">groupId</span>&gt;de.dfki.mary&lt;/<span class="pl-ent">groupId</span>&gt;
+    &lt;<span class="pl-ent">artifactId</span>&gt;voice-cmu-slt-hsmm&lt;/<span class="pl-ent">artifactId</span>&gt;
+    &lt;<span class="pl-ent">version</span>&gt;5.2.1&lt;/<span class="pl-ent">version</span>&gt;
+    &lt;<span class="pl-ent">exclusions</span>&gt;
+      &lt;<span class="pl-ent">exclusion</span>&gt;
+        &lt;<span class="pl-ent">groupId</span>&gt;com.twmacinta&lt;/<span class="pl-ent">groupId</span>&gt;
+        &lt;<span class="pl-ent">artifactId</span>&gt;fast-md5&lt;/<span class="pl-ent">artifactId</span>&gt;
+      &lt;/<span class="pl-ent">exclusion</span>&gt;
+      &lt;<span class="pl-ent">exclusion</span>&gt;
+         &lt;<span class="pl-ent">groupId</span>&gt;gov.nist.math&lt;/<span class="pl-ent">groupId</span>&gt;
+         &lt;<span class="pl-ent">artifactId</span>&gt;Jampack&lt;/<span class="pl-ent">artifactId</span>&gt;
+      &lt;/<span class="pl-ent">exclusion</span>&gt;
+    &lt;/<span class="pl-ent">exclusions</span>&gt;
+  &lt;/<span class="pl-ent">dependency</span>&gt;
+&lt;/<span class="pl-ent">dependencies</span>&gt;</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<repositories>
   <repository>
     <url>https://mlt.jfrog.io/artifactory/mlt-mvn-releases-local</url>
   </repository>
@@ -84,14 +78,39 @@ Add to your `pom.xml`:
       </exclusion>
     </exclusions>
   </dependency>
-</dependencies>
-```
+</dependencies>" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">摇篮</font></font></h3><a id="user-content-gradle" class="anchor" aria-label="永久链接：Gradle" href="#gradle"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加到您的</font></font><code>build.gradle</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<div class="highlight highlight-source-groovy notranslate position-relative overflow-auto" dir="auto"><pre>repositories {
+   mavenCentral()
 
-### Gradle
+   exclusiveContent {
+      forRepository {
+         maven {
+            url <span class="pl-s"><span class="pl-pds">'</span>https://mlt.jfrog.io/artifactory/mlt-mvn-releases-local<span class="pl-pds">'</span></span>
+         }
+      }
+      filter {
+         includeGroup <span class="pl-s"><span class="pl-pds">'</span>de.dfki.lt.jtok<span class="pl-pds">'</span></span>
+      }
+   }
+}
 
-Add to your `build.gradle`:
-```groovy
-repositories {
+dependencies {
+   implementation <span class="pl-c1">group</span>: <span class="pl-s"><span class="pl-pds">'</span>de.dfki.mary<span class="pl-pds">'</span></span>, <span class="pl-c1">name</span>: <span class="pl-s"><span class="pl-pds">'</span>voice-cmu-slt-hsmm<span class="pl-pds">'</span></span>, <span class="pl-c1">version</span>: <span class="pl-s"><span class="pl-pds">'</span>5.2.1<span class="pl-pds">'</span></span>, {
+      exclude <span class="pl-c1">group</span>: <span class="pl-s"><span class="pl-pds">'</span>com.twmacinta<span class="pl-pds">'</span></span>, <span class="pl-c1">module</span>: <span class="pl-s"><span class="pl-pds">'</span>fast-md5<span class="pl-pds">'</span></span>
+      exclude <span class="pl-c1">group</span>: <span class="pl-s"><span class="pl-pds">'</span>gov.nist.math<span class="pl-pds">'</span></span>, <span class="pl-c1">module</span>: <span class="pl-s"><span class="pl-pds">'</span>Jampack<span class="pl-pds">'</span></span>
+   }
+}</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="repositories {
    mavenCentral()
 
    exclusiveContent {
@@ -111,62 +130,57 @@ dependencies {
       exclude group: 'com.twmacinta', module: 'fast-md5'
       exclude group: 'gov.nist.math', module: 'Jampack'
    }
-}
-```
-
-
-## Synthesizing speech
-
-Text to wav basic examples are proposed in this repository
-- Maven: https://github.com/marytts/marytts-txt2wav/tree/maven
-- Gradle: https://github.com/marytts/marytts-txt2wav/tree/gradle
-
-
-## Using MaryTTS for other programming languages
-
-If you want to use MaryTTS for other programming languages (like python for example), you need to achieve 3 steps
-
-1. compiling marytts
-2. starting the server
-3. query synthesis on the server
-
-
-### Synthesize speech using the server
-
-Synthesizing speech, using the server, is pretty easy.
-You need to generate proper HTTP queries and deal with the associated HTTP responses.
-Examples are proposed :
-- python 3: https://github.com/marytts/marytts-txt2wav/tree/python
-- shell: https://github.com/marytts/marytts-txt2wav/tree/sh
-
-## Extra documentation
-
-### Server as service (Linux specific)
-
-An example of how to define marytts server as service is proposed [here](./src/main/dist/misc/marytts.server).
-
-### User dictionaries
-
-You can extend the dictionaries by adding a user dictionary. The documentation of how to do it is [here](./src/main/dist/user-dictionaries/README.md).
-
-## Contributing
-
-The recommended workflow for making contributions to the MaryTTS source code is to follow the GitHub model:
-
-1. fork the MaryTTS repository into your own profile on GitHub, by navigating to https://github.com/marytts/marytts and clicking "fork" (of course you need a GitHub account);
-
-2. use the `git clone`, `commit`, and `push` commands to make modifications on your own marytts repository;
-   in this process, make sure to `git pull upstream master` regularly to stay in sync with latest developments on the master repo;
-
-3. when you think a reusable contribution is ready, open a "pull request" on GitHub to allow for easy merging into the master repository.
-
-Have a look at the [GitHub documentation](http://help.github.com/) for further details.
-
-
-### IDE configuration
-
-Wiki pages are available to help you to configure your IDE to develop MaryTTS.
-The following IDEs have been tested and documented:
-
-- IntelliJ IDEA
-- Eclipse: https://github.com/marytts/marytts/wiki/Eclipse
+}" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">合成语音</font></font></h2><a id="user-content-synthesizing-speech" class="anchor" aria-label="永久链接：合成语音" href="#synthesizing-speech"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此存储库中提出了文本到 wav 的基本示例</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Maven： https: </font></font><a href="https://github.com/marytts/marytts-txt2wav/tree/maven"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//github.com/marytts/marytts-txt2wav/tree/maven</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">摇篮：</font></font><a href="https://github.com/marytts/marytts-txt2wav/tree/gradle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/marytts/marytts-txt2wav/tree/gradle</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 MaryTTS 用于其他编程语言</font></font></h2><a id="user-content-using-marytts-for-other-programming-languages" class="anchor" aria-label="永久链接：将 MaryTTS 用于其他编程语言" href="#using-marytts-for-other-programming-languages"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想将MaryTTS用于其他编程语言（例如python），您需要实现3个步骤</font></font></p>
+<ol dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编译玛丽特</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启动服务器</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务器上的查询综合</font></font></li>
+</ol>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用服务器合成语音</font></font></h3><a id="user-content-synthesize-speech-using-the-server" class="anchor" aria-label="永久链接：使用服务器合成语音" href="#synthesize-speech-using-the-server"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用服务器合成语音非常容易。</font><font style="vertical-align: inherit;">您需要生成正确的 HTTP 查询并处理关联的 HTTP 响应。</font><font style="vertical-align: inherit;">建议举例：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">python 3：</font></font><a href="https://github.com/marytts/marytts-txt2wav/tree/python"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https ://github.com/marytts/marytts-txt2wav/tree/python</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">外壳： https: </font></font><a href="https://github.com/marytts/marytts-txt2wav/tree/sh"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//github.com/marytts/marytts-txt2wav/tree/sh</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">额外文档</font></font></h2><a id="user-content-extra-documentation" class="anchor" aria-label="永久链接：额外文档" href="#extra-documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务器即服务（Linux 特定）</font></font></h3><a id="user-content-server-as-service-linux-specific" class="anchor" aria-label="永久链接：服务器即服务（Linux 特定）" href="#server-as-service-linux-specific"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="/marytts/marytts/blob/master/src/main/dist/misc/marytts.server"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这里</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提出了如何将 marytts 服务器定义为服务的示例</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户词典</font></font></h3><a id="user-content-user-dictionaries" class="anchor" aria-label="永久链接：用户词典" href="#user-dictionaries"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以通过添加用户词典来扩展词典。</font><font style="vertical-align: inherit;">有关如何执行此操作的文档位于</font></font><a href="/marytts/marytts/blob/master/src/main/dist/user-dictionaries/README.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2><a id="user-content-contributing" class="anchor" aria-label="永久链接：贡献" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为 MaryTTS 源代码做出贡献的推荐工作流程是遵循 GitHub 模型：</font></font></p>
+<ol dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://github.com/marytts/marytts"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过导航到https://github.com/marytts/marytts</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并单击“fork” ，将 MaryTTS 存储库分叉到您自己的 GitHub 个人资料中</font><font style="vertical-align: inherit;">（当然您需要一个 GitHub 帐户）；</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font><code>git clone</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>commit</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>push</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">命令对您自己的 marytts 存储库进行修改；</font><font style="vertical-align: inherit;">在此过程中，请确保</font></font><code>git pull upstream master</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定期与主存储库的最新进展保持同步；</font></font></p>
+</li>
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当您认为可重用的贡献已准备就绪时，请在 GitHub 上打开“拉取请求”，以便轻松合并到主存储库中。</font></font></p>
+</li>
+</ol>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请查看</font></font><a href="http://help.github.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取更多详细信息。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IDE配置</font></font></h3><a id="user-content-ide-configuration" class="anchor" aria-label="永久链接：IDE 配置" href="#ide-configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wiki 页面可帮助您配置 IDE 来开发 MaryTTS。</font><font style="vertical-align: inherit;">以下 IDE 已经过测试和记录：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">智能IDEA</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Eclipse： https: </font></font><a href="https://github.com/marytts/marytts/wiki/Eclipse"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//github.com/marytts/marytts/wiki/Eclipse</font></font></a></li>
+</ul>
+</article></div>
